@@ -3,12 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { ProductComponent } from './product/product.component';
+import { ProductsComponent } from './products/products.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductComponent,
+    ProductsComponent
   ],
   imports: [
+   HttpClientModule,
     BrowserModule,
     AppRoutingModule
   ],
